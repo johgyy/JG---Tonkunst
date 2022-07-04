@@ -1,0 +1,676 @@
+body {
+    margin: 0px 0px;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+span {
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+a {
+    text-decoration: unset;
+
+}
+
+.text-grey {
+    color: grey;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin {
+    margin: 6px 6px;
+}
+
+.d-none {
+    display: none!important;
+}
+
+.scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.topbar {
+    max-width: 100%;
+    height: 80px;
+    border-bottom: 2px groove rgb(236, 236, 236);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    height: 78px;
+    width: 300px;
+    max-width: 30vw;
+}
+
+.searchinput {
+    max-width: 22vw;
+    border-radius: 4px;
+}
+
+.topbarrightimg {
+    padding: 2px 3px;
+    margin: 0px 0px;
+    cursor: pointer;
+}
+
+
+
+.profilpicture {
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+}
+
+.bgr1 {
+    background-color: rgb(251, 251, 251);
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.postcontainer {
+    width: 45%;
+    /* min-height: 1800px; */
+    background-color: unset;
+
+    margin-left: 120px;
+
+}
+
+.post {
+    margin-bottom: 60px;
+    background-color: white;
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 4px;
+}
+
+.sidebarcontainer {
+    height: 100vh;
+    width: 30vw;
+    /* background-color: white; */
+    margin-top: 50px;
+    margin-right: 120px;
+    margin-left: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 5vh;
+    position: sticky;
+
+}
+
+.usercontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+    margin-bottom: 30px;
+}
+
+.usercontainerleft {
+    display: flex;
+    align-items: center;
+}
+
+.usernamecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.userprofilpicture {
+    height: 3.7em;
+    border-radius: 100%;
+    margin-right: 24px;
+    border: 3px solid rgb(251, 251, 251);
+
+}
+
+.userprofilpicture:hover {
+    border: 3px solid grey;
+    cursor: pointer;
+}
+
+.username {
+    color: black;
+}
+
+.username:hover {
+    cursor: pointer;
+}
+
+.usersrealname {
+    color: grey;
+}
+
+.changeaccount {
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(69, 117, 251);
+}
+
+.changeaccount:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.suggestions-headline {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+.suggestionstext {
+    color: grey;
+    margin-bottom: 24px;
+}
+
+.seeall {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+
+.otherusercontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+    margin-bottom: 16px;
+}
+
+.otherusercontainerleft {
+    display: flex;
+    align-items: center;
+}
+
+.otherusernamecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.otheruserprofilpicture {
+    height: 3em;
+    width: 3em;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: 24px;
+    border: 3px solid rgb(251, 251, 251);;
+}
+
+.otheruserprofilpicture:hover {
+    cursor: pointer;
+    border: 3px solid grey;
+}
+
+.otherusername {
+    color: black;
+}
+
+.otherusername:hover {
+    cursor: pointer;
+}
+
+.otherusersrealname {
+    color: grey;
+}
+
+.sidebarbottomlink {
+    color: grey;
+    margin-right: 12px;
+
+}
+
+.postheadcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.postheadleft {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.postheadlefttext {
+    display: flex;
+    flex-direction: column;
+}
+
+.postheadimg {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right:  16px;
+
+}
+
+.postheadimg:hover {
+    cursor: pointer;
+}
+
+.burgermenu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.location {
+    margin-top: 4px;
+    color: grey;
+}
+
+.postheadoptions {
+    width: 25px;
+    object-fit: cover;
+    margin-right: 18px;
+    margin-top: 12px;
+}
+
+.postimg {
+    object-fit: contain;
+    width: 100%;
+}
+
+.postimg:hover {
+    cursor: pointer;
+
+}
+
+.postinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.postinfo1bar {
+    margin-top: 4px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 17px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.smartlink {
+    background-color: rgb(68, 83, 255);
+    color: white;
+    font-size: 1.3em;
+    padding: 12px 12px;
+    border-radius: 10px;
+}
+
+.smartlink:hover {
+    background-color:  rgb(96, 109, 255);
+}
+
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+    border-bottom: 2px groove rgba(243, 243, 243, 0.3);
+    border-radius: 4px;
+}
+
+.comment {
+    font-size: 1em;
+    margin-left: 12px;
+    text-align: center;
+    /* margin-top: 12px; */
+
+}
+
+.timepoint {
+    margin-left: 12px;
+    margin-top: 8px;
+    font-size: 0.7em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.commentcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.likecomment {
+    margin-right: 12px;
+    height: 18px;
+    width: 18px;
+}
+
+.postaddcommentcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+
+    
+}
+
+.postaddcommentleft {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+
+}
+
+.submitcomment {
+    height: 24px;
+    width: 88px;
+    color: rgb(69, 117, 251);
+    background-color: unset;
+    border-style: none;
+    margin-right: 12px;
+}
+
+.commentinput {
+    height: 32px;
+    max-width: 700px;
+    margin-left: 12px;
+    border-style: none;
+}
+
+.copyright {
+    margin-top: 24px;
+    color: grey;
+}
+
+.audioplayer {
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 42;
+    bottom: 4px;
+    left: 25vw;
+    right: 25vw;
+    position: fixed;
+    border: 2px groove grey;
+    border-radius: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.audioplayerleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+
+.songplayerinfo {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    width: 100%;
+    font-size: 1.1em;
+    margin-left: 12px;
+    margin-top: 4px;
+
+}
+
+.imgaudioplayer {
+    height: 120px;
+    width: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.soundplayeruserinterface {
+    display: flex;
+}
+
+.soundplayericon {
+    padding: 6px 6px;
+    border: 1px groove grey;
+    border-radius: 10px;
+    background-color: white;
+    margin: 2px 6px;
+}
+
+.soundplayericon:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.songplayerartist {
+    flex-wrap: nowrap;
+    font-size: 1.0em;
+}
+
+.bgr-grey {
+    background-color: rgba(58, 58, 58, 0.893);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bgr-viewuser {
+    margin-top: 1vh;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 50vh;
+    max-height: 75vh;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 12;
+    /* justify-content: space-evenly; */
+}
+
+.viewuser-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    margin-bottom: 4px;
+    object-fit: cover;
+}
+
+.viewuser-likes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.viewuserinfotext {
+    margin: 5px 26px;
+    max-width: 600px;
+    text-align:justify;
+}
+
+.viewusersongcontainer {
+    display: flex;
+    align-items: center;
+    min-width: 50vw;
+    max-width: 90vw;
+    padding: 8px 8px;
+    border-bottom: 4px groove rgb(189, 189, 189);
+}
+
+.viewusersonglist {
+    display: flex;
+    flex-direction: column;
+}
+
+.viewusersongimg {
+    height: 130px;
+    margin-right: 12px;
+}
+
+.viewusersongimg:hover {
+    border: 3px solid grey;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.viewusersongdata {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit {
+    width: 25%;
+    margin-top: 24px;
+    padding: 8px 8px;
+}
+
+.contactcontainer {
+    background-color: rgba(255, 255, 255, 0.941);
+    border-radius: 10px;
+    height: 66vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formularcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 48px 48px;
+}
+
+.bgr-contact {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.458);
+    z-index: 120;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-button {
+    padding: 8px 8px;
+    margin-bottom: 4px;
+    background-color: rgb(68, 83, 255);
+    color: white;
+    border-radius: 10px;
+    font: bold;
+}
+
+.download-button:hover {
+    cursor: pointer;
+    background-color:  rgb(96, 109, 255);
+
+}
+
+@media (max-width: 970px) { 
+    .d-none-mobile {
+        display: none;
+    }
+
+    .postcontainer {
+        width: 100vw;
+        margin-left: 0px;
+    }
+
+    .logo {
+        height: 52px;
+    }
+
+    .comments-container {
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .comment {
+        margin: 2px 4px;
+    }
+
+    .audioplayer {
+        left: 0vw;
+        right: 0vw;
+        bottom: 0px
+    }
+
+
+    .imgaudioplayer {
+        max-width: 40vw;
+    }
+
+    .sidebarcontainer {
+        width: 10vw;
+        margin-right: 0px;
+        margin-left: 0px;
+        max-height: 70vh;
+    }
+
+    .usercontainer {
+        width: 10vw;
+    }
+
+    .otherusercontainer {
+        width: 10vw;
+    }
+
+    .userprofilpicture{
+        height: 11vw;
+        margin-right: 0px;
+    }
+
+    .otheruserprofilpicture {
+        height: 10vw;
+        width: 10vw;
+        margin-right: 0px;
+
+    }
+
+    .postcontainer {
+        width: 80vw;
+    }
+
+    .usercontainerleft {
+        width: 10vw;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .songplayerinfo {
+        font-size: 0.88em;
+    }
+
+    .soundplayericon {
+        padding: 2px 2px;
+    }
+}

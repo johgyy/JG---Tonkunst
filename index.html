@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <title>JG Tonkunst</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="templates/returnhtmltemplates.js"></script>
+    <script src="script.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="includeHTML(); showLabelArtists(); showposts(); showAudioPlayerData(0);">
+
+    <div w3-include-html="templates/topbar.html"></div>
+
+
+    <div class="bgr1">
+        <div id="postcontainer" class="postcontainer">
+            <!-- Hier stehen jetzt die post divs -->
+        </div>
+
+        <div class="sidebarcontainer">
+            <div id="usercontainer" class="usercontainer">
+            </div>
+            <div class="suggestions-headline d-none-mobile">
+                <span class="suggestionstext">Vorschläge für dich:</span>
+                <a class="seeall" href="#"><b>Alle ansehen</b></a>
+            </div>
+            <div class="scroll suggestions" id="suggestions">
+                <!-- hier stehen dann die einzelnen vorschlagscontainer -->
+            </div>
+
+            <div class="sidebarbottom d-none-mobile">
+                <a class="sidebarbottomlink" href="#">Info</a>
+                <a class="sidebarbottomlink" href="#">Hilfe</a>
+                <a class="sidebarbottomlink" href="#">Presse</a>
+                <a class="sidebarbottomlink" href="#">API</a>
+                <a class="sidebarbottomlink" href="#">Jobs</a>
+                <a class="sidebarbottomlink" href="#">Impressum/Nutzungsbedingungen/NetzDG</a>
+                <a class="sidebarbottomlink" href="#">Standorte</a>
+                <a class="sidebarbottomlink" href="#">Sprache</a>
+                <div class="copyright">
+                    © 2022 JG TONKUNST
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="audioplayer">
+        <div class="audioplayerleft">
+            <div class="songplayerinfo">
+                <span id="songplayertitle" class="songplayertext">TITLE</span>
+                <span id="songplayerartist" class="songplayertext songplayerartist"><a>ARTIST</a></span>
+            </div>
+            <div class="soundplayeruserinterface">
+                <img onclick="previousSong()" class="soundplayericon" src="icons/left.png">
+                <div id="playandpausecontainer">
+                    <img onclick="playSong(0)" id="playandpausebutton" class="soundplayericon" src="icons/play.png">
+                </div>
+                <!-- <img class="soundplayericon" src="icons/pause.png"> -->
+                <img onclick="nextSong()" class="soundplayericon" src="icons/right.png">
+            </div>
+        </div>
+        <img id="songplayerimg" src="" class="imgaudioplayer">
+    </div>
+
+    <div id="bgr-grey" onclick="closeArtistPage()" class="bgr-grey d-none">
+        
+    </div>
+
+    <div id="contactwindow" class="bgr-contact d-none" onclick="closeContactWindow()">  
+            <form onclick="donotclose(event)" class="contactcontainer" action="/JG Tonkunst/send_mail.php" method="POST">
+                <h1 class="headline text-center">KONTAKT</h1>
+                <div class="formularcontainer">
+                    <p class="contacttextcontent text-large text-center">Bitte gib deine Email ein:</p>
+                    <input class="inputname" name="name" placeholder="E-Mail Adresse" style="height: 50px; width: 700px;">
+                    <p class="contacttextcontent text-large text-center">Bitte gib deine Nachricht an uns hier ein:</p>
+                    <textarea class="requestarea" name="message" placeholder="Ihr Anliegen" style="width: 700px; height: 200px;"></textarea><br>
+                    <button class="submit" type="submit" onclick="closeContactWindow()">ABSENDEN</button>
+                </div>
+            </form>
+    </div>
+
+</body>
+
+</html>
